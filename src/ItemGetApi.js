@@ -10,7 +10,7 @@ class ItemGetApi extends React.Component{
     }
 
     componentDidMount(){
-        fetch('http://turbineapp-env.eba-vvxyi2a2.us-east-2.elasticbeanstalk.com/api/items').then((res)=>{
+        fetch('https://api.allorigins.win/raw?url=http://turbineapp-env.eba-vvxyi2a2.us-east-2.elasticbeanstalk.com/api/items').then((res)=>{
             res.json().then((result)=>{
                 console.warn(result);
                 this.setState({items:result})
