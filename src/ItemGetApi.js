@@ -10,7 +10,7 @@ class ItemGetApi extends React.Component{
     }
 
     componentDidMount(){
-        fetch('http://127.0.0.1:8000/api/items').then((res)=>{
+        fetch('http://turbineapp-env.eba-vvxyi2a2.us-east-2.elasticbeanstalk.com/api/items').then((res)=>{
             res.json().then((result)=>{
                 console.warn(result);
                 this.setState({items:result})
